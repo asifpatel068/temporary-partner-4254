@@ -1,6 +1,8 @@
 const express=require("express")
 const {connection}=require("./config/db")
 const {userRouter}=require("./routes/user.router")
+const {productRouter}=require("./routes/product.router")
+
 var cors = require('cors')
 const app=express()
 
@@ -10,6 +12,7 @@ app.get("/",(req,res)=>{
 })
 
 app.use("/users",userRouter)
+app.use("/products",productRouter)
 
 
 app.listen(7575,async()=>{
