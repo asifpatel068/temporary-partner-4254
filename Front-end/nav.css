@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    font-family: "Inter Tight", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+ 
+   }
+    .topnav{
+      color: white;
+      text-align: center;
+      background-color: rgb(58, 42, 124);
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .b1{
+      display: flex;
+      justify-content: space-around;
+       /* border: 1px solid; */
+    }
+    .b1>div:nth-child(1){
+      /* border: 1px solid; */
+      margin-left: 20px;
+      height: 60px;
+      display: flex;
+    }
+    .serach{
+      /* border: 1px solid; */
+      width: 60%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+    }
+    .serach>input{
+      width: 80%;
+      padding: 10px;
+    }
+
+
+      .logopart{
+        /* border: 1px solid; */
+      width:15% ;
+      padding: 5px;
+      display: flex;
+      
+      }
+      .logopart>div{
+       
+        align-self: center;
+        /* border: 1px solid; */
+        font-size: 60%;
+        display: flex;
+        flex-direction: column;
+      }
+      .logopart>div>div{
+        width: 50%;
+        /* border: 1px solid; */
+        align-self: center;
+      }
+      .logopart>div>p{
+        align-self: center;
+        margin-top: 0px;
+      }
+      .b2{
+        display: flex;
+        justify-content: space-around;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .b2>div{
+        padding: 15px;
+      }
+      .botnav{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+
+
+
+
+      
+      hr{
+        margin: 50px;
+      }
+      .topfooter{
+        width: 60%;
+     
+        margin: auto;
+        margin-top: 30px;
+      }
+      .topfooter>div:nth-child(1){
+        width: 100%;
+      }
+      .topfooter>div:nth-child(1)>div{
+        width: 30%;
+        margin: auto;
+        display: flex;
+        height: 20px;
+      }
+      .tf2{
+      
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .tf2>div{
+        padding: 10px;
+        background-color: rgb(245, 245, 245);
+        width:46%;
+        gap: 10px;
+        display: flex;
+        padding-bottom: 30px;
+
+        
+      }
+      .tf2>div>div:nth-child(1){
+  
+        width: 30%;
+      }
+      .tf2>div>div:nth-child(2){
+       
+        width: 65%;
+      }
+      
+      .t3{
+        width: 100%;
+     display: flex;
+     justify-content: flex-end;  
+        border: 1px solid;
+        margin-top: 50px;
+      }  
+      .boldtext{
+        font-size:18px; 
+        font-weight: 600;
+      }    
+      .midf{
+        margin-top: 30px;
+        background-color: #f5f5f5;
+        padding: 15px;
+      }
+      .table{
+        
+          gap:30px;
+          width:70%;
+          margin: auto;
+          margin-top: 10px;
+          padding: 30px;
+         
+
+      }
+     
+      .body td,.body th{
+          font-size: 15px;
+          
+          
+      }
+      #head{
+          font-size: 18px;
+          font-weight: 600;
+        
+      }
+     
+      #last{
+          width:100%;
+      }

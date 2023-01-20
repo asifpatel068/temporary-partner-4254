@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+           font-family: sans-serif; 
+           
+        }
+        /* * div{
+            border: 1px solid red;
+            
+        } */
+        body{
+            margin: auto;
+            width: 97%;
+            
+        }
+        span{
+            color: #003fa3;
+            cursor: pointer;
+        }
+        span:hover{
+            text-decoration: 1px underline;
+        }
+        #itemLocation{
+            font-size: 15px;
+        }
+        #sort{
+            width: 15%; 
+              
+        }
+        #grey{
+           color: #525252; 
+        }
+        #type{
+            font-family: 'Times New Roman';
+            font-weight: 100;
+            font-size: 30px;
+            width: 95%;
+        }
+        #sort>div>#bold{
+            font-weight: 550;
+            font-size: 17px;
+        }
+        #category>p:hover{
+            text-decoration: 1.5px underline;
+            cursor: pointer;
+        }
+        .sortby {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+
+        }
+
+        /* Hide the browser's default radio button */
+        .sortby input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Create a custom radio button */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            border: 1px solid gray;
+            border-radius: 50%;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .sortby:hover input ~ .checkmark {
+
+            border: 1px solid black;
+        }
+
+        /* When the radio button is checked, add a blue background */
+        .sortby input:checked ~ .checkmark {
+            background-color: #003fa3;
+        }
+
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the indicator (dot/circle) when checked */
+        .sortby input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the indicator (dot/circle) */
+        .sortby .checkmark:after {
+            top: 4px;
+            left: 4px;
+            width: 7px;
+            height: 7px;
+            border-radius: 60%;
+            background: white;
+        }
+/* ================================== */
+        #color1{
+            display: flex;
+        }
+       
+        .button{
+            width: 160px;
+        }
+        .arrow{
+            width: 60px;
+
+        }
+        .arrow img{
+            width: 100%;
+            scale: .3;
+            padding: 0;
+            margin-top: 5px;
+            margin-bottom: -9px;
+        }
+        
+/* ================================== */       
+        #contents{
+            display: flex;
+            margin-bottom: 50px;
+    
+        }
+        #container{
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(2,500px);
+            gap: 20px;
+        }
+        #star{
+            color: goldenrod;
+            
+        }
+        #title,#mrp,#brand{
+            padding: 0px 5px;
+           
+        }
+        #card{
+            border: 1px solid rgb(233, 233, 233);
+       
+         
+        }
+       #card:hover{
+            opacity: 90%;
+            
+        }
+        #card>img{
+            width: 100%;
+           
+        }
+        #cartdiv{
+            
+            padding-left: 10px;
+            padding-right: 5px;
+        
+            
+        }
+       
+        #add{
+            background-color: #a46d5b;
+            height: 20px;
+          width: 60%;
+          color: #f5f5f5;
+          border: none;
+          border-radius: 5px;
+          height: 30px;
+          padding: 0px 15px;
+        }
+
+        #add:hover{
+    
+            background-color: rgb(196, 176, 79);
+        }
+        
+  /* ================================== */  
+        #buttons{
+            margin: 10px;
+            background-color: white;
+            color: black;
+            border-radius: 25px;
+            padding: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border: none;
+            font-size: 15px;
+            font-weight: 100;
+            color: #7e7e7e;
+          
+        }
+        #buttons:hover{
+            cursor: pointer;
+            border: 2px solid #3a2a7c;
+        }
+        #related{
+            margin-top: 0px;
+            background-color: #f5f5f5;
+            margin: -3%;
+            padding: 15px 40px;
+        }
+       
+        
+    </style>
+    
+</head>
+<body>
+    <div id="itemLocation">
+        <p><span>Home</span> /  Plus Size Tops & Sweaters</p>
+    </div>
+    <div id="contents">
+        
+        <div id="sort">
+            <h2 id="type">Plus Size Tops & Sweaters</h2>
+            <p id="grey">825 Items</p>
+            <div id="category">
+               <h3 id="bold">CATEGORY</h3> 
+               <p>Suprema & Perfect Price</p>
+               <p>Tunics</p>
+               <p>Tees</p>
+               <p>Casual Shirts</p>
+               <p>Blouses</p>
+               <p>Cardigans</p>
+               <p>Sweaters</p>
+               <p>Tank Tops</p>
+               <p>Kimonos & Shrugs</p>
+               <p>Jackets</p>
+               <p>Hoodies & Sweatshirts</p>
+               <p>Active Tops</p>
+               <p>Petites</p>
+               <p>Curvy Tops</p>
+               <p>Liz & Me Tops</p>
+            </div>
+            <hr>
+            <div id="sortby">
+                <h3 id="bold">SORT BY</h3>
+                <label class="sortby">
+                    <input type="radio"  name="radio">Featured 
+                    <span class="checkmark" id="c1"></span>
+                </label>
+                <label class="sortby">
+                    <input type="radio"  name="radio">Top Rated 
+                    <span class="checkmark" id="c2"></span>
+                </label>
+                <label class="sortby">
+                    <input type="radio"  name="radio">Highest Price 
+                    <span class="checkmark" id="c3"></span>
+                </label>
+                <label class="sortby">
+                    <input type="radio"  name="radio">Lowest Price 
+                    <span class="checkmark" id="c4"></span>
+                </label>
+            </div>
+            <hr>
+            <div id="filterby">
+                <h3 id="bold">FILTER BY</h3>
+                <div id="color1">
+                    <div id="color">
+                        <div  class="button">
+                            <p>Color</p> 
+                        </div>
+                        <div  class="button">
+                            <p>Size</p>
+                        </div>
+                        <div  class="button">
+                            <p>Brand</p>
+                        </div>
+                        <div  class="button">
+                            <p>Fabric Material</p>
+                        </div>
+                        <div  class="button">
+                            <p>Features</p>
+                        </div>
+                        <div  class="button">
+                            <p>Occasion</p>
+                        </div>
+                        <div  class="button">
+                            <p>Product Type</p>
+                        </div>
+                        <div id="color" class="button">
+                            <p>Length</p>
+                        </div>
+                        <div  class="button">
+                            <p>Sleeve Length</p>
+                        </div>
+                        <div  class="button">
+                            <p></p>Style</p> 
+                        </div>
+                    </div>
+                    <div class="arrow">
+                        <img src="https://iili.io/Ha4vpGS.jpg" id="arrow">
+                        <img src="https://iili.io/Ha4vpGS.jpg" id="arrow">
+                        <img src="https://iili.io/Ha4vpGS.jpg" id="arrow">
+                        <img src="https://iili.io/Ha4vpGS.jpg" id="arrow">
+                        <img src="https://iili.io/Ha4vpGS.jpg" id="arrow">
+                        <img src="https://iili.io/Ha4vpGS.jpg" id="arrow">
+                        <img src="https://iili.io/Ha4vpGS.jpg" id="arrow">
+                        <img src="https://iili.io/Ha4vpGS.jpg" id="arrow">
+                        <img src="https://iili.io/Ha4vpGS.jpg" id="arrow">
+                        <img src="https://iili.io/Ha4vpGS.jpg" id="arrow">
+                    </div>
+                </div>
+                    
+                
+                
+                
+               
+
+            </div>
+            
+        </div>
+        <div id="container">
+            
+        </div>
+    </div>
+    <div id="related">
+        <div>
+            <h3>Related items</h3>
+            <div>
+                <button id="buttons">Scoopneck Top</button>
+                <button id="buttons">Keyhole Top</button>
+                <button id="buttons">Suprema Embroidered Scoopneck Tee</button>
+                <button id="buttons">V-Neck Top</button>
+                <button id="buttons">Waffle Knit Top</button>
+            </div>
+        </div>
+        <div>
+            <h3>Related Categories</h3>
+            <div>
+                <button id="buttons">Long Denim Jackets</button>
+                <button id="buttons">Womens Button Cardigans</button>
+                <button id="buttons">Button Cardigans</button>
+                <button id="buttons">Long Kimonos</button>
+                <button id="buttons">Lace Camis</button>
+            </div>
+        </div>
+        
+        
+    </div>
+    
+</body>
+</html>
+<script >
+    let cart_Items=JSON.parse(localStorage.getItem("cartdata")) || []
+
+    let cardsData
+    fetch("http://localhost:7575/products")   
+    .then((res)=>res.json())
+    .then((data)=>{
+        
+        cardsData=data
+        console.log(data[0])
+        renderProducts(data)
+          
+    })
+    document.querySelector("#c1").addEventListener("click",function(){
+        let newData=cardsData.reverse()
+        renderProducts(newData)
+    })
+    // document.querySelector("#c2").addEventListener("click",function(){
+    //     let newData=cardsData.sort((a,b)=>{return b.rating-a.rating});
+    //     renderProducts(newData)
+    // })
+    document.querySelector("#c3").addEventListener("click",function(){
+        let newData=cardsData.sort((a,b)=>{return b.price-a.price});
+        renderProducts(newData)
+    })
+    
+    document.querySelector("#c4").addEventListener("click",function(){
+        let newData=cardsData.sort((a,b)=>{return a.price-b.price});
+        renderProducts(newData)
+    })
+    
+
+    let container=document.querySelector("#container")
+    console.log(container)
+    
+    function renderProducts(data){
+        container.innerHTML=""
+        data.forEach(function(ele){
+
+            
+                let card=document.createElement("div")
+                card.setAttribute("id","card")
+
+                let image = document.createElement("img")
+                image.setAttribute("src",ele.img)
+
+                let title = document.createElement("p")
+                title.textContent=ele.title
+                title.setAttribute("id","mrp")
+
+                let category = document.createElement("p")
+                category.textContent=ele.category
+           
+
+                let price = document.createElement("p")
+                price.textContent="₹"+ele.price+".00"
+                price.setAttribute("id","title")
+
+               
+                let cartdiv=document.createElement("div")
+                cartdiv.setAttribute("id","cartdiv")
+
+                let Brand = document.createElement("p")
+                Brand.textContent="by "+ele.brand
+                Brand.setAttribute("id","brand")
+
+                let button = document.createElement("button")
+                button.textContent="ADD TO BAG "
+                button.setAttribute("id","add")
+
+                button.addEventListener("click",function(){
+                    let cart_Items=JSON.parse(localStorage.getItem("cartdata")) || []
+                    let present=false
+                    for(i=0;i<cart_Items.length;i++){
+                        if(cart_Items[i].price===ele.price){
+                            present=true
+                            break;
+                        }
+                    }
+                    if(present===true){
+                        alert("Product Already In Bag")
+                    }
+                    else{
+                       cart_Items.push(ele)
+                        localStorage.setItem("cartdata",JSON.stringify(cart_Items));
+                        alert("Product Added to Bag") 
+                    }
+
+
+                    
+                })    
+        
+                
+                cartdiv.append(price,title,Brand,button)
+                card.append(image,cartdiv)
+                document.querySelector("#container").append(card)
+            
+            
+
+        })
+
+    }
+
+
+</script>
