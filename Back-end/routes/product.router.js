@@ -50,6 +50,7 @@ productRouter.delete("/delete/:id",async(req,res)=>{
     try{
         let product=await ProductModel.findByIdAndDelete({_id:ID})
         console.log("Product deleted")
+        res.send("Product deleted")
 
     }catch(err){
         res.send("Err while deleting product")

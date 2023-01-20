@@ -4,65 +4,302 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./serachbar.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="nav.css">
     <title>Document</title>
     <style>
-      /* .b1{
+ 
+ .nav.sticky{
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-color: white;
+        }
+        
+        
+      .main{
+         margin: auto;
+       margin-top: 200px;
+        width: 85%;
+      }
+      .main>img{
+        margin-top: 25px;
+      }
+      .topline{
+          font-family: "Montserrat", "Inter Tight", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+          font-size:17px; 
+          font-weight: 400;
         display: flex;
-        justify-content: space-between;
-         border: 1px solid;
-      }
-      .b1>div:nth-child(1),.b1>div:nth-child(3){
-        border: 1px solid;
-        width:20% ;
-        height: 60px;
-        display: flex;
-      }
-      .b1>div:nth-child(3)>div{
-        border: 1px solid;
-        display: flex;
-        flex-direction: column;
-      }
-      .b1>div:nth-child(3)>div>img{
-        align-self: center;
-        width: 40%;
-      }
-      .b1>div:nth-child(2){
-        width: 40%;
-      } */
-    </style>
+
+        }
+        .topline>p{
+            margin-left: 10px;
+        }
+        .botgrid{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          gap: 10px;
+        }
+        .botgrid>button{
+          border: 0px;
+          background-color: rgba(44, 25, 122, 0.918);
+          color: white;
+          height: 50px;
+          font-size: 100%;
+        }
+        .addstrip{
+          margin-top: 30px;
+         
+          color: white;
+          background-color: rgb(58, 42, 124);
+          display: flex;
+          justify-content: space-around;
+        }
+
+        </style>
 </head>
 <body>
-   <!-- <div class="nav">
-    <div class="topnav"></div>
+   <div class="nav">
+    <div class="topnav">
+      <p>SPRING PREVIEW UP TO 40% OFF NEW ARRIVALS | Details | View All Deals</p>
+    </div>
     <div class="midnav">
         <img width="100%" src="https://i.postimg.cc/tCXtRMSJ/Screenshot-2023-01-19-161231.jpg" alt="">
     </div>
     <div class="botnav">
         <div class="b1">
-            <div><img width="80%"  src="https://i.postimg.cc/gkhk1SDt/fashion-store-1.jpg" alt=""></div>
+            <div><img width="100%"  src="https://i.postimg.cc/GhPnbJjZ/ASIFLOGO.jpg" alt=""></div>
 
-            <div>
-                <form class="example" action="action_page.php">
-                  <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
+            <div class="serach">
+                <input type="text" placeholder="Keyword or catalog item">
             </div>
 
-            <div>
-                <div><img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw93bd7266/images/common/icons/icon-catalog.svg?yocs=j_" alt=""><p>CATALOG</p></div>
-                <div><img src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw3a534e16/images/common/icons/icon-card.svg?yocs=j_" alt=""><p>CARD</p></div>
-                <div><img  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw8fc793b7/images/common/icons/icon-account.svg?yocs=j_" alt=""><p>SIGN IN</p></div>
-                <div><img  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw4c4b66fe/images/common/icons/icon-bag-filled.svg?yocs=j_" alt=""><p>MY BAG</p></div>
+            <div class="logopart">
+                <div>
+                  <div>
+                   <img  width="75%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw93bd7266/images/common/icons/icon-catalog.svg?yocs=j_" alt="">
+                  </div>
+                   <p>CATALOG</p>
+                  </div>
+                <div>
+                  <div> <img  width="90%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw3a534e16/images/common/icons/icon-card.svg?yocs=j_" alt="">
+                 </div>
+                  <p>CARD</p>
+                </div>
+                <div>
+                  <div> <img  width="75%"   src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw8fc793b7/images/common/icons/icon-account.svg?yocs=j_" alt="">
+                  </div>
+                 <p>SIGN IN</p>
+                </div>
+                <div>
+                  <div><img   width="75%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw4c4b66fe/images/common/icons/icon-bag-filled.svg?yocs=j_" alt="">
+                  </div>
+                  <p>MY BAG</p>
+                </div>
             </div>
         </div>
-        <div class="b2"></div>
-        <div></div>
+        <div class="b2">
+          <div>FEATURED</div>
+          <div>TOPS & SWEATERS</div>
+          <div>BOTTOMS</div>
+          <div>DRESSES</div>
+          <div>ACTIVE</div>
+          <div>COATS & JACKETS</div>
+          <div>SLEEPWEAR</div>
+          <div>BRAS & INTIMATES</div>
+          <div>SHOES & ACCESSORIES</div>
+          <div>SWIMWEAR</div>
+          <div>HOME</div>
+          <div>CLEARANCE</div>
+        </div>
+        
     </div>
-   </div> -->
-    <h1>Welcome to homepage</h1>
+   </div>
 
+
+   <!-- main contain -->
+
+   <div class="main">
+    <div class="topline">
+      <img width="5%" src="https://www.catherines.com/on/demandware.static/-/Sites-oss-Library/default/dwe12903b5/ca-images/plcc-images/platinum/ca-plcc-platinum-icon.svg" alt="">
+      <p> <b>Save $20 </b> on your first purchase of $25+ when you open and use a Catherines Platinum Credit Card!1,* 
+          Apply Now
+           / Learn More</p>
+      </div>
+    <img width="100%" src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dwa190cb33/ca-images/homepage/2023/wk03/ca-0117-MainFeature_D.jpg?yocs=j_m_" alt="">
+    <img width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dw599a69c1/ca-images/homepage/2023/wk03/ca-0117-BestOf_D.jpg?yocs=j_m_" alt="">
+    <div class="botgrid">
+      <button>SHOP TOPS</button>
+      <button>SHOP DRESSES</button>
+      <button>SHOP BOTTOMS</button>
+      <button>SHOP SWEATERS</button>
+      <button>SHOP BLOUSES</button>
+      <button>SHOP COATS & JACKETS</button>
+      <button>SHOP ACTIVEWEAR</button>
+      <button>SHOP LIZ&ME</button>
+    </div>
+    <div class="addstrip">
+      <p>SEE IT FIRST!</p>
+      <p>ENJOY EARLY ACCESS TO NEW ARRIVALS, OFFERS AND SALE ALERTS
+      </p>
+      <button>SIGN UP FOR EMAILS</button>
+    </div>
+    <img width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dw4d7025e9/ca-images/homepage/2023/wk03/ca-0117-Wardrobe_D.jpg?yocs=j_m_" alt="">
+    <img  width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dw3c19d3e8/ca-images/homepage/2023/wk03/ca-0117-Dresses_D.jpg?yocs=j_m_" alt="">
+
+    <img  width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dw6ac564f6/ca-images/homepage/2023/wk03/ca-0117-Suprema_D.jpg?yocs=j_m_" alt="">
+
+   
+      <img width="100%"   src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dw4e8ca1c4/ca-images/homepage/2023/wk03/ca-0117-Shoes_D.jpg?yocs=j_m_" alt="">
     
+    <img  width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dw552bea66/ca-images/homepage/2023/wk03/01-2023-CA-Outfitting-HP-Banner-011723_D.jpg?yocs=j_m_" alt="">
+
+    <img  width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dw4bc22dfb/ca-images/homepage/2023/wk03/ca-0117-Clearance_D.jpg?yocs=j_m_" alt="">
+  </div>
+    
+<hr>
+
+<div class="footer">
+  <div class="topfooter">
+    
+      <div>
+        <div>
+          <img width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dwc2f818ff/oss-images/footer/icon-instagram.svg?yocs=j_" alt="">
+          <img width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dw8dc17bfd/oss-images/footer/icon-pinterest.svg?yocs=j_" alt="">
+          <img width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dw9f95e4f0/oss-images/footer/icon-facebook.svg?yocs=j_" alt="">
+          <img width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dwb3966921/oss-images/footer/icon-twitter.svg?yocs=j_" alt="">
+          <img width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dw96df2763/oss-images/footer/icon-youtube.svg?yocs=j_" alt="">
+
+        </div>
+      </div>
+
+      <div class="tf2">
+
+        <div>
+
+          <div>
+            <img width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dw71372f5c/oss-images/sfra/ca-images/footer-banners/2021-ca-footer-CATALOG.jpg?yocs=j_m_" alt="">
+          </div>
+          <div> 
+             <p class="boldtext">Request a Free Catalog</p>
+          <p>Fresh New Styles That Fit You Beautifully, Delivered Right To Your Home.</p>
+        </div>
+
+        </div>
+
+
+        <div>
+
+          <div>
+            <img width="100%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.326/on/demandware.static/-/Sites-oss-Library/default/dwd002c8f2/ca-images/plcc-images/platinum/ca-plcc-platinum-flat.png?yocs=j_" alt="">
+          </div>
+          <div>  
+            <p class="boldtext">Catherines Platinum Credit Card</p>
+          <p>Save $20 on your first purchase of $25+ when you open and use a Catherines Platinum Credit Card! 1,*</p>
+        </div>
+
+        </div>
+
+      </div>
+    
+      
+  
+    </div>
+<div class="midf">
+  <table class="table">
+    <thead class="head">
+      
+    </thead>
+   <tbody class="body">
+    <tr>
+      <td id="head">Customer Service</td>
+      <td id="head">My Account</td>
+      <td id="head">Credit Card</td>
+      <td id="head">Catherines</td>
+     </tr>
+    <tr>
+        <td>Contact Us</td>
+        <td>Sign In/Register</td>
+        <td>Apply Now</td>
+        <td>About Us</td>
+    </tr>
+    <tr>
+        <td>Shopping Info</td>
+        <td>Track My Order</td>
+        <td>Learn More</td>
+        <td>About Fullbeauty Brands</td>
+    </tr>
+    <tr>
+        <td>Shipping Info</td>
+        <td>Return Order</td>
+        <td>Pay My Bill</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Returns</td>
+        <td>Order History</td>
+        <td></td>
+        <td id="head">Shipping To</td>
+    </tr>
+    <tr>
+        <td>Exchanges</td>
+        <td>Wishlist</td>
+        <td   id="head">Catalog</td>
+        <td>Singapore</td>
+    </tr>
+    <tr>
+        <td>Billing & Payments</td>
+        <td>Offers & Coupons</td>
+        <td>Order From Catalog</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>Size & Fit</td>
+        <td>Rewards</td>
+        <td>Request a Catalog</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>International</td>
+ 
+    </tr>
+    <tr>
+        <td>FAQ</td>
+      
+    </tr>
+    <tr>
+        <td>Rewards</td>
+     
+    </tr>
+    <tr>
+        <td>Perks</td>
+        
+    </tr>
+   </tbody>
+</table>
+</div>
+
+  <div>
+      <img id="last" src="https://i.postimg.cc/zB875FNB/last.png" alt="">
+  </div>
+  <div> <a href="">admin</a></div>
+</div>
+
+
 </body>
 </html>
+
+<script>
+ // <!------------------- navigation bar code ------------>
+ let navbar=document.querySelector(".nav")
+    
+    window.onscroll=function(){
+        navbar.classList.add("sticky");
+    }
+// <!------------------- navigation bar code ------------>
+
+</script>
