@@ -9,7 +9,7 @@
     <title>Document</title>
     <style>
  
- .nav.sticky{
+       .nav.sticky{
             position: fixed;
             width: 100%;
             top: 0;
@@ -25,6 +25,7 @@
       }
       .main>img{
         margin-top: 25px;
+        cursor: pointer;
       }
       .topline{
           font-family: "Montserrat", "Inter Tight", "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -50,75 +51,83 @@
           color: white;
           height: 50px;
           font-size: 100%;
+          cursor: pointer;
         }
         .addstrip{
           margin-top: 30px;
-         
+         height: 60px;
           color: white;
           background-color: rgb(58, 42, 124);
           display: flex;
           justify-content: space-around;
         }
-
+        .addstrip>p{
+          align-self: center;
+        }
         </style>
 </head>
 <body>
-   <div class="nav">
-    <div class="topnav">
-      <p>SPRING PREVIEW UP TO 40% OFF NEW ARRIVALS | Details | View All Deals</p>
-    </div>
-    <div class="midnav">
-        <img width="100%" src="https://i.postimg.cc/tCXtRMSJ/Screenshot-2023-01-19-161231.jpg" alt="">
-    </div>
-    <div class="botnav">
-        <div class="b1">
-            <div><img width="100%"  src="https://i.postimg.cc/GhPnbJjZ/ASIFLOGO.jpg" alt=""></div>
+<!-- =====----------nav===------------- -->
+<div class="nav">
+  <div class="topnav">
+    <p>SPRING PREVIEW UP TO 40% OFF NEW ARRIVALS | Details | View All Deals</p>
+  </div>
+  <div class="midnav">
+      <img width="100%" src="https://i.postimg.cc/tCXtRMSJ/Screenshot-2023-01-19-161231.jpg" alt="">
+  </div>
+  <div class="botnav">
+      <div class="b1">
+          <div id="logo">
+            <img width="100%"  src="https://i.postimg.cc/GhPnbJjZ/ASIFLOGO.jpg" alt="">
+          </div>
 
-            <div class="serach">
-                <input type="text" placeholder="Keyword or catalog item">
-            </div>
+          <div class="serach">
+              <input type="text" placeholder="Keyword or catalog item">
+          </div>
 
-            <div class="logopart">
+          <div class="logopart">
+              <div id="catlog">
                 <div>
-                  <div>
-                   <img  width="75%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw93bd7266/images/common/icons/icon-catalog.svg?yocs=j_" alt="">
-                  </div>
-                   <p>CATALOG</p>
-                  </div>
-                <div>
-                  <div> <img  width="90%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw3a534e16/images/common/icons/icon-card.svg?yocs=j_" alt="">
-                 </div>
-                  <p>CARD</p>
+                 <img  width="75%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw93bd7266/images/common/icons/icon-catalog.svg?yocs=j_" alt="">
                 </div>
-                <div>
-                  <div> <img  width="75%"   src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw8fc793b7/images/common/icons/icon-account.svg?yocs=j_" alt="">
-                  </div>
-                 <p>SIGN IN</p>
+                 <p>CATALOG</p>
                 </div>
-                <div>
-                  <div><img   width="75%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw4c4b66fe/images/common/icons/icon-bag-filled.svg?yocs=j_" alt="">
-                  </div>
-                  <p>MY BAG</p>
+              <div id="card">
+                <div> <img  width="90%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw3a534e16/images/common/icons/icon-card.svg?yocs=j_" alt="">
+               </div>
+                <p>CARD</p>
+              </div>
+              <div  id="signin">
+                <div> <img  width="75%"   src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw8fc793b7/images/common/icons/icon-account.svg?yocs=j_" alt="">
                 </div>
-            </div>
-        </div>
-        <div class="b2">
-          <div>FEATURED</div>
-          <div>TOPS & SWEATERS</div>
-          <div>BOTTOMS</div>
-          <div>DRESSES</div>
-          <div>ACTIVE</div>
-          <div>COATS & JACKETS</div>
-          <div>SLEEPWEAR</div>
-          <div>BRAS & INTIMATES</div>
-          <div>SHOES & ACCESSORIES</div>
-          <div>SWIMWEAR</div>
-          <div>HOME</div>
-          <div>CLEARANCE</div>
-        </div>
-        
-    </div>
-   </div>
+               <p>SIGN IN</p>
+              </div>
+              <div  id="cart">
+                <div><img   width="75%"  src="https://cdn-fsly.yottaa.net/5f90511cd93140f2cca8dcaa/www.catherines.com/v~4b.325/on/demandware.static/Sites-oss-Site/-/default/dw4c4b66fe/images/common/icons/icon-bag-filled.svg?yocs=j_" alt="">
+                </div>
+                <p>MY BAG</p>
+              </div>
+          </div>
+      </div>
+      <div class="b2">
+        <div>FEATURED</div>
+        <div>TOPS & SWEATERS</div>
+        <div>BOTTOMS</div>
+        <div>DRESSES</div>
+        <div>ACTIVE</div>
+        <div>COATS & JACKETS</div>
+        <div>SLEEPWEAR</div>
+        <div>BRAS & INTIMATES</div>
+        <div>SHOES & ACCESSORIES</div>
+        <div>SWIMWEAR</div>
+        <div>HOME</div>
+        <div>CLEARANCE</div>
+      </div>
+      
+  </div>
+ </div>
+
+
 
 
    <!-- main contain -->
@@ -163,6 +172,9 @@
     
 <hr>
 
+
+
+<!-- -------------------footer---------------- -->
 <div class="footer">
   <div class="topfooter">
     
@@ -301,5 +313,39 @@
         navbar.classList.add("sticky");
     }
 // <!------------------- navigation bar code ------------>
+document.querySelector("#signin").addEventListener("click",function s(){
+    window.location="signin.html"
+})
 
+document.querySelector("#signin").addEventListener("click",function c(){
+    window.location="cart.html"
+})
+
+document.querySelector("#logo").addEventListener("click",function l(){
+    window.location="index.html"
+})
+
+
+
+let b=document.querySelectorAll("button")
+
+let img=document.querySelectorAll(".main>img")
+
+for(i=0;i<b.length;i++){
+  b[i].addEventListener("click",cate)
+}
+
+for(i=0;i<img.length;i++){
+  img[i].addEventListener("click",cate)
+}
+
+let p=document.querySelectorAll(".b2>div")
+
+for(i=0;i<p.length;i++){
+  p[i].addEventListener("click",cate)
+}
+
+function cate(){
+  window.location="product.html"
+}
 </script>

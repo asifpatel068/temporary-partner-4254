@@ -1,3 +1,29 @@
+
+document.querySelector("#signin").addEventListener("click",function s(){
+    window.location="signin.html"
+})
+
+document.querySelector("#cart").addEventListener("click",function c(){
+    window.location="cart.html"
+})
+
+document.querySelector("#logo").addEventListener("click",function l(){
+    window.location="index.html"
+})
+
+
+let p=document.querySelectorAll(".b2>div")
+
+for(i=0;i<p.length;i++){
+  p[i].addEventListener("click",cate)
+}
+
+function cate(){
+  window.location="product.html"
+}
+
+
+
 document.querySelector(".signin").addEventListener("click",login)
 document.querySelector(".createacc").addEventListener("click",register)
 
@@ -8,9 +34,17 @@ async function login(event){
         let email=document.querySelector("#lemail").value
         let password=document.querySelector("#lpassword").value
 
+        if(email=="admin" && password=="admin"){
+            window.location="admin.html";
+            return
+        }
+
         let logdata={
             email,password
         }
+
+        
+
         let logurl="http://localhost:7575/users/login"
 
         let res=await fetch(logurl,{
@@ -59,6 +93,7 @@ async function register(event){
             }
         })
         let data=await res.json()
+        console.log(data)
         alert("Registered Successfully")
         
 

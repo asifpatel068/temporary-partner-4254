@@ -9,6 +9,7 @@
     font-size:17px; 
     font-weight: 400;
   display: flex;
+  margin-top: 30px;
   margin-bottom: 50px;
 }
 .topline>p{
@@ -20,14 +21,17 @@
     margin: auto;
     display: flex;
     justify-content: space-between;
-
+   
 }
 .main>div{
     background-color: rgb(216, 215, 223);
     border: 0px solid;
     width: 37%;
+    padding-top: 15px;
     padding-left: 5%;
     padding-right: 5%;
+    padding-bottom: 10px;
+    border-radius: 10px;
 }
 .main>div>div{
     border: 0px solid;
