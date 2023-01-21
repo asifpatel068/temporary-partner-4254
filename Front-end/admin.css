@@ -1,18 +1,28 @@
- 
-        #con{
-            margin-top: 5px;
+        #top{
             width: 100%;
-           padding: 50px;
-          background-color: rgb(221, 220, 220);
-          display: flex;
-          justify-content: space-around;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        text-align: center;
+        }
+        
+        .body{
+            display: flex;
+        }
+
+        #con{
+
+            width: 30%;
+           display: flex;
+           flex-direction: column;
+         
+          border: 1px soild;
        }
 
         #main,#main1{
+            align-self: center;
             background-color: rgb(243, 240, 240);
             text-align: center;
-        
-            width: 25%;
+        margin-bottom: 50px;
+            width: 80%;
             padding: 2%;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -44,10 +54,10 @@
             
         }
         #container{
-            width: 95%;
+            width: 70%;
             margin: auto;
             display: grid;
-            grid-template-columns: repeat(6,1fr);
+            grid-template-columns: repeat(4,1fr);
             gap: 10px;
         }
         #container p{
@@ -56,7 +66,7 @@
         }
         #card{
             
-           border: 1px solid gray;
+           border: 1px solid rgb(224, 221, 221);
         }
         #cartdiv1{
            text-align: center;

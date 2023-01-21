@@ -34,9 +34,17 @@ async function login(event){
         let email=document.querySelector("#lemail").value
         let password=document.querySelector("#lpassword").value
 
+        if(email=="admin" && password=="admin"){
+            window.location="admin.html";
+            return
+        }
+
         let logdata={
             email,password
         }
+
+        
+
         let logurl="http://localhost:7575/users/login"
 
         let res=await fetch(logurl,{

@@ -11,44 +11,51 @@
     </style>
 </head>
 <body>
-    
-  
-    <div id="con">
-        <div id="main">
-            <p>To add Items to Products </p>
-            <form id="form1">
-                <input type="text" id="title" placeholder="  Enter Product title">
-                <input type="text" id="brand" placeholder="  Enter Product brand">
-                <input type="number" id="price" placeholder="  Enter Product price">
-                <input type="text" id="category" placeholder="  Enter Product category">
-                <input type="text" id="img" placeholder="  Enter Product image link">
-                <input type="submit" id="submit">
-            </form> 
-         </div>
-        <div id="main1">
-            <p>To edit/delete Items from Products </p>
-            <form id="form2">
-                <select name="method" id="method">
-                    <option value="select">Select Method</option>
-                    <option value="edit">Edit</option>
-                    <option value="delete">Delete</option>
-                </select>
-                <input type="text" id="id" placeholder="  Enter Product ID">
-                <select name="item" id="item">
-                    <option value="select">Select Type</option>
-                    <option value="title">title</option>
-                    <option value="brand">brand</option>
-                    <option value="price">price</option>
-                    <option value="category">category</option>
-                    <option value="img">Image Link</option>
-                </select>
-                <input type="text" name="input" id="input" placeholder="  Enter Input">
-              <input type="submit" id="submit">
-            </form> 
-         </div>
+    <div id="top">
+       <a href="./index.html"><img width="10%" src="https://i.postimg.cc/GhPnbJjZ/ASIFLOGO.jpg" alt=""></a> 
+        
     </div>
-<h3>Products:</h3>
-    <div id="container"></div>
+   <h3>Products Data</h3> 
+    <div class="body">
+
+        <div id="con">
+            <div id="main">
+                <p>To add Items to Products </p>
+                <form id="form1">
+                    <input type="text" id="title" placeholder="  Enter Product title">
+                    <input type="text" id="brand" placeholder="  Enter Product brand">
+                    <input type="number" id="price" placeholder="  Enter Product price">
+                    <input type="text" id="category" placeholder="  Enter Product category">
+                    <input type="text" id="img" placeholder="  Enter Product image link">
+                    <input type="submit" id="submit">
+                </form> 
+             </div>
+            <div id="main1">
+                <p>To edit/delete Items from Products </p>
+                <form id="form2">
+                    <select name="method" id="method">
+                        <option value="select">Select Method</option>
+                        <option value="edit">Edit</option>
+                        <option value="delete">Delete</option>
+                    </select>
+                    <input type="text" id="id" placeholder="  Enter Product ID">
+                    <select name="item" id="item">
+                        <option value="select">Select Type</option>
+                        <option value="title">title</option>
+                        <option value="brand">brand</option>
+                        <option value="price">price</option>
+                        <option value="category">category</option>
+                        <option value="img">Image Link</option>
+                    </select>
+                    <input type="text" name="input" id="input" placeholder="  Enter Input">
+                  <input type="submit" id="submit">
+                </form> 
+             </div>
+        </div>
+    
+        <div id="container"></div>
+    </div>
+  
 </body>
 </html>
 
