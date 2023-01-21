@@ -1,0 +1,70 @@
+ 
+        #con{
+            margin-top: 5px;
+            width: 100%;
+           padding: 50px;
+          background-color: rgb(221, 220, 220);
+          display: flex;
+          justify-content: space-around;
+       }
+
+        #main,#main1{
+            background-color: rgb(243, 240, 240);
+            text-align: center;
+        
+            width: 25%;
+            padding: 2%;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        }
+       
+        #main>p,#main1>p{
+            font-size: 20px;
+            font-family: Futura-Medium, "Century Gothic", "Gill Sans", Helvetica, Arial, sans-serif;
+            font-weight: 600;
+            line-height: 30px;
+        }
+
+        input,select{
+            padding: 10px 0px 10px 0px;
+            width: 95%;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            color: grey;
+            border: 1px solid grey;
+        }
+
+        #submit{
+            background-color: rgb(58, 42, 124);
+            color: beige;
+            font-weight: 600;
+        }
+        h3{
+            margin: 30px;
+            
+        }
+        #container{
+            width: 95%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            gap: 10px;
+        }
+        #container p{
+            font-size: 70%;
+            font-weight: 600;
+        }
+        #card{
+            
+           border: 1px solid gray;
+        }
+        #cartdiv1{
+           text-align: center;
+        }
+        #cartdiv1>img{
+            width: 70%;
+            
+        }
+        #cartdiv2{
+            padding: 10px;
+        }

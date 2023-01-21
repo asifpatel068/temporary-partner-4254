@@ -68,17 +68,23 @@
       }
       .b2>div{
         padding: 15px;
+        cursor: pointer;
       }
       .botnav{
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       }
 
-
+      .botnav img{
+        cursor: pointer;
+      }
 
 
       
       hr{
-        margin: 50px;
+        
+        width: 100%;
+        margin-bottom: 15px;
+        margin-top: 10px;
       }
       .topfooter{
         width: 60%;
