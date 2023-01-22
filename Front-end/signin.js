@@ -45,7 +45,7 @@ async function login(event){
 
         
 
-        let logurl="http://localhost:7575/users/login"
+        let logurl="https://nice-teal-bass-ring.cyclic.app/users/login"
 
         let res=await fetch(logurl,{
             method:"POST",
@@ -83,7 +83,7 @@ async function register(event){
         let regdata={
             firstName,lastName,email,password
         }
-        let regurl="http://localhost:7575/users/register"
+        let regurl="https://nice-teal-bass-ring.cyclic.app/users/register"
 
         let res=await fetch(regurl,{
             method:"POST",

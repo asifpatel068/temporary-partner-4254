@@ -26,7 +26,7 @@ function cate(){
 let cart_Items=JSON.parse(localStorage.getItem("cartdata")) || []
 
 let cardsData
-fetch("http://localhost:7575/products")   
+fetch("https://nice-teal-bass-ring.cyclic.app/products")   
 .then((res)=>res.json())
 .then((data)=>{
     
