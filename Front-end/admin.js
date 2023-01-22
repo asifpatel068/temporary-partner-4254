@@ -14,7 +14,7 @@ async function add(event){
             title,brand,price,category,img
         }
 
-        let url="http://localhost:7575/products/add"
+        let url="https://nice-teal-bass-ring.cyclic.app/products/add"
 
         let res=await fetch(url,{
             method:"POST",
@@ -24,9 +24,10 @@ async function add(event){
             }
         })
 
+        alert("Product added Successfully")
         let data=await res.json()
         console.log(data)
-        alert("Product added Successfully")
+       
         
     }catch(err){
         console.log(err)
@@ -50,7 +51,7 @@ try{
     }
     console.log(editdata)
 
-    let url=`http://localhost:7575/products/edit/${id}`
+    let url=`https://nice-teal-bass-ring.cyclic.app/products/edit/${id}`
 
     let res=await fetch(url,{
         method:"PATCH",
@@ -60,16 +61,17 @@ try{
         }
     })
 
+alert("Product Updated Successfully")
     let data=await res.json()
     console.log(data)
-    alert("Product Upadted Successfully")
+    
     }
     else if(method=="delete"){
 
         let id=document.querySelector("#id").value
    
 
-    let url=`http://localhost:7575/products/delete/${id}`
+    let url=`https://nice-teal-bass-ring.cyclic.app/products/delete/${id}`
 
     let res=await fetch(url,{
         method:"DELETE",
@@ -79,9 +81,10 @@ try{
         }
     })
 
+alert("Product Deleted Successfully")
     let data=await res.json()
     console.log(data)
-    alert("Product Deleted Successfully")
+    
     }
     
 }catch(err){
@@ -92,7 +95,7 @@ try{
 // --------------------------------------------------------
 
 
-fetch("http://localhost:7575/products")   
+fetch("https://nice-teal-bass-ring.cyclic.app/products")   
 .then((res)=>res.json())
 .then((data)=>{
     

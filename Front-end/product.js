@@ -22,27 +22,29 @@ function cate(){
 }
 
 
-
+let pq=0
 let cart_Items=JSON.parse(localStorage.getItem("cartdata")) || []
 
+let topData
 let cardsData
-fetch("http://localhost:7575/products")   
+fetch("https://nice-teal-bass-ring.cyclic.app/products")   
 .then((res)=>res.json())
 .then((data)=>{
-    
+    console.log(data.length)
     cardsData=data
+    topData=data
     console.log(data[0])
     renderProducts(data)
       
 })
 document.querySelector("#c1").addEventListener("click",function(){
-    let newData=cardsData.reverse()
+    let new1=topData.reverse()
+    renderProducts(new1)
+})
+document.querySelector("#c2").addEventListener("click",function(){
+    let newData=cardsData.sort((a,b)=>{return b.title-a.title});
     renderProducts(newData)
 })
-// document.querySelector("#c2").addEventListener("click",function(){
-//     let newData=cardsData.sort((a,b)=>{return b.rating-a.rating});
-//     renderProducts(newData)
-// })
 document.querySelector("#c3").addEventListener("click",function(){
     let newData=cardsData.sort((a,b)=>{return b.price-a.price});
     renderProducts(newData)
@@ -53,6 +55,15 @@ document.querySelector("#c4").addEventListener("click",function(){
     renderProducts(newData)
 })
 
+function serachmen(){
+    let sd=document.querySelector("#searchm").value
+
+    let newarr=cardsData.filter(function (ele){
+            return ele.title.toLowerCase().includes(sd.toLowerCase())||ele.brand.toLowerCase().includes(sd.toLowerCase())||ele.category.toLowerCase().includes(sd.toLowerCase())
+    })
+    
+    renderProducts(newarr);
+}
 
 let container=document.querySelector("#container")
 console.log(container)
@@ -117,10 +128,26 @@ function renderProducts(data){
             
             cartdiv.append(price,title,Brand,button)
             card.append(image,cartdiv)
-            document.querySelector("#container").append(card)
-        
-        
 
+            document.querySelector("#container").append(card)
+   
     })
 
+}
+
+
+
+let count1=1
+setInterval(myTimer, 2000);
+
+function myTimer() {
+ if(count1%2==0){
+    document.querySelector(".topnav>p").innerHTML = "";
+    document.querySelector(".topnav>p").innerHTML = "NOW OR NEVER SALE 40% TO 60% OFF SHOP NOW! | Details | View All Deals";
+ }
+ else{
+    document.querySelector(".topnav>p").innerHTML = "";
+    document.querySelector(".topnav>p").innerHTML = "AMAZING DEALS STARTING FROM $12.99 | Details | View All Deals";
+ }
+count1++
 }
