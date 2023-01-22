@@ -147,3 +147,18 @@ function removItem(ele,i){
     displayItem(cart_Items)
     localStorage.setItem("cartdata",JSON.stringify(cart_Items))
 }
+
+let count1=1
+setInterval(myTimer, 2000);
+
+function myTimer() {
+ if(count1%2==0){
+    document.querySelector(".topnav>p").innerHTML = "";
+    document.querySelector(".topnav>p").innerHTML = "NOW OR NEVER SALE 40% TO 60% OFF SHOP NOW! | Details | View All Deals";
+ }
+ else{
+    document.querySelector(".topnav>p").innerHTML = "";
+    document.querySelector(".topnav>p").innerHTML = "AMAZING DEALS STARTING FROM $12.99 | Details | View All Deals";
+ }
+count1++
+}
