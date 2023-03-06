@@ -24,9 +24,10 @@ async function add(event){
             }
         })
 
+        alert("Product added Successfully")
         let data=await res.json()
         console.log(data)
-        alert("Product added Successfully")
+       
         
     }catch(err){
         console.log(err)
@@ -60,9 +61,10 @@ try{
         }
     })
 
+alert("Product Updated Successfully")
     let data=await res.json()
     console.log(data)
-    alert("Product Upadted Successfully")
+    
     }
     else if(method=="delete"){
 
@@ -79,9 +81,10 @@ try{
         }
     })
 
+alert("Product Deleted Successfully")
     let data=await res.json()
     console.log(data)
-    alert("Product Deleted Successfully")
+    
     }
     
 }catch(err){

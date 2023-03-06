@@ -55,7 +55,7 @@ async function login(event){
             }
         })
         let data=await res.json()
-        alert("login Success")
+        alert("Login Successful")
         window.location=("index.html")
 
     }catch(err){
@@ -93,7 +93,7 @@ async function register(event){
             }
         })
         let data=await res.json()
-        console.log(data)
+       
         alert("Registered Successfully")
         
 
@@ -101,6 +101,22 @@ async function register(event){
         console.log("err",err)
     }
     
-   
-  
+
+}
+
+
+
+let count1=1
+setInterval(myTimer, 2000);
+
+function myTimer() {
+ if(count1%2==0){
+    document.querySelector(".topnav>p").innerHTML = "";
+    document.querySelector(".topnav>p").innerHTML = "NOW OR NEVER SALE 40% TO 60% OFF SHOP NOW! | Details | View All Deals";
+ }
+ else{
+    document.querySelector(".topnav>p").innerHTML = "";
+    document.querySelector(".topnav>p").innerHTML = "AMAZING DEALS STARTING FROM $12.99 | Details | View All Deals";
+ }
+count1++
 }
